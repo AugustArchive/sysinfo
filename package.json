@@ -11,5 +11,8 @@
     ],
     "repository": {
         "url": "https://github.com/auguwu/sysinfo"
+    },
+    "scripts": {
+        "lint": "eslint . --fix"
     }
 }
