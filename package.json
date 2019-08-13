@@ -1,0 +1,15 @@
+{
+    "name": "@augu/sysinfo",
+    "description": "Shows system-related information",
+    "version": "0.0.1",
+    "main": "lib/index.js",
+    "author": "August <augu@voided.pw>",
+    "license": "MIT",
+    "files": [
+        "lib/",
+        "index.d.ts"
+    ],
+    "repository": {
+        "url": "https://github.com/auguwu/sysinfo"
+    }
+}
