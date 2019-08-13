@@ -1,4 +1,6 @@
-# @augu/sysinfo[![npm version](https://badge.fury.io/js/%40yamashiro%2Fcore.svg)](https://badge.fury.io/js/%40auguwu%2Fsysinfo) [![Discord](https://discordapp.com/api/guilds/382725233695522816/embed.png)](https://discord.gg/yDnbEDH) [![Travis](https://travis-ci.org/auguwu/sysinfo.svg?branch=master)](https://travis-ci.org/auguwu/sysinfo) 
+# @augu/sysinfo
+[![npm version](https://badge.fury.io/js/%40yamashiro%2Fcore.svg)](https://badge.fury.io/js/%40auguwu%2Fsysinfo) [![Discord](https://discordapp.com/api/guilds/382725233695522816/embed.png)](https://discord.gg/yDnbEDH) [![Travis](https://travis-ci.org/auguwu/sysinfo.svg?branch=master)](https://travis-ci.org/auguwu/sysinfo) [![Build status](https://ci.appveyor.com/api/projects/status/7v8r6tkqlc1xo1e6?svg=true)](https://ci.appveyor.com/project/ohlookitsAugust/sysinfo)
+
 > **Shows information from Node's `os` module**
 >
 > Based on [os-utils](https://github.com/oscmejia/os-utils)
