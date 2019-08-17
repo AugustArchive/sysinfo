@@ -12,7 +12,7 @@ declare module '@augu/sysinfo' {
     export function getCpuCount(): number;
     export function getFreeMemory(): number;
     export function getTotalMemory(): number;
-    export function free(callback: (error: Error | null, info: FreeInfo) => void): void;
+    export function free(callback: (info: FreeInfo) => void): void;
     export function getLoadAvg(time?: number): number;
     export function getCpuUsage(): number;
     export function getCpuInfo(): { total: number; idle: number; }
