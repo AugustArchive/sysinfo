@@ -21,7 +21,7 @@ sys.getCPUInfo();
 - Code your heart out!~
 - Lint the package for any code errors (``npm run lint`` or ``yarn lint``)
 - Push to your branch (``git push -u origin branch``)
-- Submit a repository
+- Submit a pull request
 
 ## LICENSE
 > [sysinfo](https://github.com/auguwu/sysinfo) is made by [auguwu](https://augu.dev) and released under the **MIT** license.
