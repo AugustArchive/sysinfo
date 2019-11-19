@@ -14,5 +14,9 @@
     },
     "scripts": {
         "lint": "eslint . --fix"
+    },
+    "devDependencies": {
+        "@augu/eslint-config": "1.0.0",
+        "eslint": "6.6.0"
     }
 }
