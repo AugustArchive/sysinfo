@@ -3,7 +3,7 @@
 
 > **Shows information from Node's `os` module**
 >
-> Based on [os-utils](https://github.com/oscmejia/os-utils)
+> Based (and updated version!) of [os-utils](https://github.com/oscmejia/os-utils)
 >
 > [Documentation](https://docs.augu.dev/sysinfo) **|** [NPM](https://npmjs.com/package/@augu/sysinfo) **|** [GitHub](https://github.com/auguwu/sysinfo)
 
@@ -24,10 +24,10 @@ sys.getCPUInfo();
 - Submit a pull request
 
 ## LICENSE
-> [sysinfo](https://github.com/auguwu/sysinfo) is made by [auguwu](https://augu.dev) and released under the **MIT** license.
+> Released under the **MIT** License
 
 ```
-Copyright (c) 2019 August
+Copyright (c) 2019-2020 August
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

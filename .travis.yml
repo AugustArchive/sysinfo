@@ -10,7 +10,7 @@ before_install:
 jobs:
   include:
     - stage: test
-      script: npm run lint
+      script: eslint src --ext .js --fix
 cache:
   yarn: true
   directories:

@@ -1,22 +1,29 @@
 {
     "name": "@augu/sysinfo",
     "description": "Shows system-related information",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "main": "lib/index.js",
     "author": "August <augu@voided.pw>",
     "license": "MIT",
-    "files": [
-        "lib/",
-        "index.d.ts"
-    ],
+    "files": ["lib/", "esm.mjs", "index.d.ts"],
+    "exports": {
+        ".": [
+            {
+                "require": "./lib/index.js",
+                "import": "./esm.mjs"
+            },
+            "./lib/index.js"
+        ],
+        "./esm": "./esm.mjs"
+    },
     "repository": {
         "url": "https://github.com/auguwu/sysinfo"
     },
     "scripts": {
-        "lint": "eslint . --fix"
+        "lint": "eslint src --ext .js --fix"
     },
     "devDependencies": {
-        "@augu/eslint-config": "1.0.0",
-        "eslint": "6.6.0"
+        "@augu/eslint-config": "1.0.5",
+        "eslint": "6.8.0"
     }
 }
