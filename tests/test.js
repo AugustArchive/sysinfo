@@ -15,3 +15,4 @@ console.log(`System Load Average by 1: ${sys.getLoadAvg(1)}`);
 console.log(`System Load Average by 5: ${sys.getLoadAvg(5)}`);
 console.log(`System CPU Model (${sys.getCpuInfo().firstModel}...${sys.getCpuInfo().lastModel}):\n${inspect(sys.getCpuInfo())}\n`);
 console.log(`System Filesystem:\n${inspect(sys.getFilesystemInfo())}\n`);
+console.log(`System Proccess by 10:\n${inspect(sys.getProcesses(10))}\n`);

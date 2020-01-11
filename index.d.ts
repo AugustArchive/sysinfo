@@ -31,6 +31,12 @@ declare module '@augu/sysinfo' {
         idle: number;
     }
 
+    interface Process {
+        command: string;
+        time: string;
+        cpu: string;
+    }
+
     /**
      * The version of the library
      */
@@ -125,4 +131,16 @@ declare module '@augu/sysinfo' {
      * @returns The information fetched from the `df` command
      */
     export function getFilesystemInfo(): FilesystemInfo;
+
+    /**
+     * Gets all of the processes running
+     * 
+     * Warnings:
+     * - This will not work in a Windows machine
+     * 
+     * @param pid The number of processes to list
+     * @works Linux, MacOS
+     * @returns An array of all the processes running by the `pid` argument
+     */
+    export function getProcesses(pid?: number): Process[];
 }
