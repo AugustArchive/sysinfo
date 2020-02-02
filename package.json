@@ -1,7 +1,7 @@
 {
   "name": "@augu/sysinfo",
   "description": "Shows system-related information",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "lib/index.js",
   "author": "August <augu@voided.pw>",
   "license": "MIT",
@@ -20,6 +20,7 @@
     "url": "https://github.com/nowoel/sysinfo"
   },
   "scripts": {
+    "prepare": "yarn lint",
     "lint": "eslint lib --ext .js --fix"
   },
   "devDependencies": {
