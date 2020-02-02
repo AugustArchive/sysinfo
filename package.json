@@ -1,29 +1,30 @@
 {
-    "name": "@augu/sysinfo",
-    "description": "Shows system-related information",
-    "version": "0.1.0",
-    "main": "lib/index.js",
-    "author": "August <augu@voided.pw>",
-    "license": "MIT",
-    "files": ["lib/", "esm.mjs", "index.d.ts"],
-    "exports": {
-        ".": [
-            {
-                "require": "./lib/index.js",
-                "import": "./esm.mjs"
-            },
-            "./lib/index.js"
-        ],
-        "./esm": "./esm.mjs"
-    },
-    "repository": {
-        "url": "https://github.com/auguwu/sysinfo"
-    },
-    "scripts": {
-        "lint": "eslint src --ext .js --fix"
-    },
-    "devDependencies": {
-        "@augu/eslint-config": "1.0.5",
-        "eslint": "6.8.0"
-    }
+  "name": "@augu/sysinfo",
+  "description": "Shows system-related information",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "author": "August <augu@voided.pw>",
+  "license": "MIT",
+  "files": ["lib/", "esm.mjs", "index.d.ts"],
+  "exports": {
+    ".": [
+      {
+        "require": "./lib/index.js",
+        "import": "./esm.mjs"
+      },
+      "./lib/index.js"
+    ],
+    "./esm": "./esm.mjs"
+  },
+  "repository": {
+    "url": "https://github.com/nowoel/sysinfo"
+  },
+  "scripts": {
+    "lint": "eslint lib --ext .js --fix"
+  },
+  "devDependencies": {
+    "@augu/eslint-config": "1.1.0",
+    "eslint": "6.8.0",
+    "leeks.js": "0.0.8"
+  }
 }

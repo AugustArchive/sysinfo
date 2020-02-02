@@ -1,13 +1,17 @@
 import sysinfo from './lib/index.js';
 
 export const {
-    Constants,
-    version,
-    getPlatform,
-    getCpuCount,
-    getFreeMemory,
-    getCpuUsage,
-    free,
-    getLoadAvg,
-    getCpuInfo
+  version, 
+  Constants, 
+  getCpuCount, 
+  getCpuInfo, 
+  getCpuUsage, 
+  getFilesystemInfo,
+  getFreeMemory, 
+  getLoadAvg, 
+  getPlatform, 
+  getProcesses, 
+  getTotalMemory, 
+  getUnixUptime, 
+  free
 } = sysinfo;
