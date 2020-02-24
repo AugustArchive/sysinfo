@@ -1,6 +1,6 @@
 // Why not use Jest?
-// Jest requires *everything* to match the same
-// and this is a System Information library, so
+// Jest requires *everything* to match the same and 
+// this is a System Information library, so
 // tests will fail if ran by a different machine
 const { inspect } = require('util');
 const sys = require('../lib');
@@ -20,3 +20,5 @@ console.log(`System CPU Model (${sys.getCpuInfo().firstModel}...${sys.getCpuInfo
 console.log(`System Filesystem:\n${inspect(sys.getFilesystemInfo())}\n`);
 console.log(`System Proccess by 10:\n${inspect(sys.getProcesses(10))}\n`);
 console.log(`Unix Uptime:\n${inspect(sys.getUnixUptime())}`);
+console.log(`Workstation: ${inspect(sys.getWindowsWorkstation())}`);
+console.log(`Services: ${inspect(sys.getWindowsServices())}`);

@@ -43,6 +43,16 @@ declare module '@augu/sysinfo' {
     loads: number[];
   }
 
+  interface Workstation {
+    serverMessageBlocks: number;
+    bytesTransmitted: number;
+    bytesReceived: number;
+    desktopName: string;
+    writeOp: number;
+    readOp: number;
+    since: string;
+  }
+
   /**
    * The version of the library
    */
@@ -70,7 +80,7 @@ declare module '@augu/sysinfo' {
    * Gets the CPU count
    * @works Windows, Linux, MacOS
    */
-  export function getCpuCount(): number;
+  export function getCPUCount(): number;
 
   /**
    * Gets the free allocated memory
@@ -113,19 +123,17 @@ declare module '@augu/sysinfo' {
    * Gets the CPU usage to a humanizable-like format
    * @works Windows, Linux, MacOS
    * @example
-   * ```js
-   * const usage = sys.getCpuUsage();
+   * const usage = sys.getCPUUsage();
    * console.log(`${usage}%`); //> 35%
-   * ```
    */
-  export function getCpuUsage(): number;
+  export function getCPUUsage(): number;
 
   /**
    * Gets the CPU's first and last mode, the total and idle memory allocated
    * @works Windows, Linux, MacOS
    * @returns The information needed
    */
-  export function getCpuInfo(): CPUInfo;
+  export function getCPUInfo(): CPUInfo;
 
   /**
    * Gets the file system information from the `df` command
@@ -156,4 +164,18 @@ declare module '@augu/sysinfo' {
    * @returns An object from the command
    */
   export function getUnixUptime(): UnixUptimeStats;
+
+  /**
+   * Gets information from `net statistics workstation` command
+   * @works Windows
+   * @returns An object of everything from that
+   */
+  export function getWindowsWorkstation(): Workstation;
+
+  /**
+   * Gets the enabled services running in the background
+   * @works Windows
+   * @returns Array of all services avaliable
+   */
+  export function getWindowsServices(): string[];
 }
