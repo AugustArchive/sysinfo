@@ -53,6 +53,12 @@ declare module '@augu/sysinfo' {
     since: string;
   }
 
+  interface Motherboard {
+    serialNumber: string;
+    manufacturer: string;
+    product: string;
+  }
+
   /**
    * The version of the library
    */
