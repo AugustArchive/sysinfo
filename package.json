@@ -1,7 +1,7 @@
 {
   "name": "@augu/sysinfo",
-  "description": "Shows system-related information",
-  "version": "0.2.0",
+  "description": "⚙️ Utility library to view system-related information",
+  "version": "0.2.1",
   "main": "lib/index.js",
   "author": "August <augu@voided.pw>",
   "license": "MIT",
