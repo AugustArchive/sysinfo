@@ -37,6 +37,12 @@ declare module '@augu/sysinfo' {
     cpu: string;
   }
 
+  interface WindowsProcess {
+    name: string;
+    ppid: number;
+    pid: number;
+  }
+
   interface UnixUptimeStats {
     uptime: string;
     users: number;
@@ -159,7 +165,7 @@ declare module '@augu/sysinfo' {
    * @works Windows, Linux, MacOS
    * @returns An array of all the processes running by the `pid` argument
    */
-  export function getProcesses(pid?: number): Process[];
+  export function getProcesses(pid?: number): (Process | WindowsProcess)[];
   
   /**
    * Gets information from the `uptime` command in Unix-subsystems
