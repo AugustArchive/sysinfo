@@ -155,11 +155,8 @@ declare module '@augu/sysinfo' {
   /**
    * Gets all of the processes running
    * 
-   * Warnings:
-   * - This will not work in a Windows machine
-   * 
    * @param pid The number of processes to list
-   * @works Linux, MacOS
+   * @works Windows, Linux, MacOS
    * @returns An array of all the processes running by the `pid` argument
    */
   export function getProcesses(pid?: number): Process[];
