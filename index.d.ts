@@ -78,15 +78,18 @@ declare module '@augu/sysinfo' {
   /**
    * Gets the platform to a humanizable-like format
    * @works Windows, MacOS, Linux
-   * @returns {'Linux' | 'Macintosh' | 'Windows' | 'Android' | 'Unknown'} The OS that the machine is running
+   * @returns {'Linux' | 'Unix' | 'SunOS' | 'Macintosh' | 'Windows' | 'BSD' | 'Android' | 'Unknown'} The OS that the machine is running
    * 
    * - `Linux`: All Linux distributions
    * - `Macintosh`: MacOS
    * - `Windows`: Microsoft Windows
+   * - `SunOS`: SunOS
+   * - `Unix`: Other Unix distributions
+   * - `BSD`: BSD family of distributions (FreeBSD and OpenBSD)
    * - `Android`: Any android app that supports Node.js
    * - `Unknown`: The library cannot find the OS by `process.platform`
    */
-  export function getPlatform(): 'Linux' | 'Macintosh' | 'Windows' | 'Android' | 'Unknown';
+  export function getPlatform(): 'Linux' | 'Unix' | 'SunOS' | 'Macintosh' | 'Windows' | 'BSD' | 'Android' | 'Unknown';
 
   /**
    * Gets the CPU count
