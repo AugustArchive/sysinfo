@@ -190,4 +190,11 @@ declare module '@augu/sysinfo' {
    * @returns Array of all services avaliable
    */
   export function getWindowsServices(): string[];
+
+  /**
+   * Gets the current user's username
+   * @works Windows, Linux, MacOS
+   * @returns Username 
+   */
+  export function getUsername(): string;
 }
