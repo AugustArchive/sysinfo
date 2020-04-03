@@ -197,4 +197,11 @@ declare module '@augu/sysinfo' {
    * @returns Username 
    */
   export function getUsername(): string;
+
+  /**
+   * Gets the computer's name
+   * @works Windows, Linux, MacOS
+   * @returns Computer Name
+   */
+  export function getComputerName(): string;
 }
